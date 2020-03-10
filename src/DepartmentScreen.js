@@ -56,6 +56,9 @@ class DepartmentScreen extends React.Component {
            college = collegeList[0];
            this.loadDepartments(college);
         }
+        else {
+            this.setState({results: []});
+        }
         this.setState({collegeList: collegeList, college: college});
     }
 
