@@ -112,7 +112,7 @@ class DepartmentScreen extends React.Component {
                 <TopNavigation title="Departments" alignmment="center" leftControl={this.renderNavigateBack()} />
                 <Divider/>
                 <Layout style={{flex: 1, padding: 20}}>
-                    <Text category='h1'>Departments</Text>
+                    <Text category='h1'>Departments within Colleges</Text>
                     <Select data={this.state.campusList} selectedOption={this.state.campus}
                             onSelect={this.handleSelectCampus} placeholder={"Select Campus"}/>
                     <Select data={this.state.collegeList} selectedOption={this.state.college}
