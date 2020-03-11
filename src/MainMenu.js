@@ -16,12 +16,12 @@ const data = [
         name: 'Campus'
     },
     {
-        title: 'Departments',
-        name: 'Department'
+        title: 'Colleges',
+        name: 'College'
     },
     {
-        title: 'Menu Item 4',
-        name: 'About'
+        title: 'Departments',
+        name: 'Department'
     },
 ];
 
