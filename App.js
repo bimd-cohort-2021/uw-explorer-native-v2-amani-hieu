@@ -11,6 +11,7 @@ import CampusScreen from "./src/CampusScreen";
 import DepartmentScreen from "./src/DepartmentScreen";
 import settings from "./config";
 import {SafeAreaView} from "react-native-web";
+import CollegeScreen from "./src/CollegeScreen";
 
 const Stack = createStackNavigator();
 
@@ -96,6 +97,8 @@ class App extends React.Component {
                                 <Stack.Screen name="About" component={AboutScreen}/>
                                 <Stack.Screen name="Campus" component={CampusScreen}
                                     initialParams={this.state}/>
+                                <Stack.Screen name="College" component={CollegeScreen}
+                                              initialParams={this.state}/>
                                 <Stack.Screen name="Department" component={DepartmentScreen}
                                               initialParams={this.state}/>
                             </Stack.Navigator>
