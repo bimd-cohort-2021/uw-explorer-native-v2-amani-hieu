@@ -91,6 +91,7 @@ class App extends React.Component {
                 <IconRegistry icons={EvaIconsPack}/>
                 <ApplicationProvider mapping={mapping} theme={lightTheme}>
                     {(this.state.loadingFlag >= 0)?(
+	                    <Header />
                         <NavigationContainer>
                             <Stack.Navigator initialRouteName="Home" headerMode='none'>
                                 <Stack.Screen name="Home" component={HomeScreen}/>
