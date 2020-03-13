@@ -9,6 +9,7 @@ import HomeScreen from "./src/HomeScreen";
 import AboutScreen from "./src/AboutScreen";
 import CampusScreen from "./src/CampusScreen";
 import DepartmentScreen from "./src/DepartmentScreen";
+import Footer from "./src/Footer";
 import settings from "./config";
 import {SafeAreaView} from "react-native-web";
 
@@ -100,6 +101,7 @@ class App extends React.Component {
                                               initialParams={this.state}/>
                             </Stack.Navigator>
                         </NavigationContainer>
+                        <Footer />
                     ):(
                         <SafeAreaView style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
                             <Text>Loading Cache...</Text>
